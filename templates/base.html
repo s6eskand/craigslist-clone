@@ -1,10 +1,67 @@
-<!DOCTYPE html>
+
+{% load static %}
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>CoolListings, a craigslist clone</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 <body>
-<h2>Hopefully this turns out great!</h2>
+
+<nav class="#4db6ac teal lighten-2">
+    <div class="container nav-wrapper">
+        <a href="/" class="brand-logo">CoolListings</a>
+        <ul id="nav-mobile" class="right">
+            <li><a href="/">Home</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <h1 style="text-align: center">Your search is my command on CoolListings</h1>
+
+    <!-- Flex box item 1 -->
+    <div class="row">
+        <div class="col s4">
+            <div class="center">
+                <i class="large material-icons" style="color: #EE6E73">flash_on</i>
+                <p>Fast craigslist web scraper</p>
+                <p class="light center">Scrape as you please in this beautiful GUI</p>
+            </div>
+        </div>
+
+
+    <!-- Flex box item 2 -->
+        <div class="col s4">
+            <div class="center">
+                <i class="large material-icons" style="color: orange">camera</i>
+                <p>Filter your searches</p>
+                <p class="light center">Built in filter based off of pricing</p>
+            </div>
+        </div>
+
+
+    <!-- Flex box item 3 -->
+        <div class="col s4">
+            <div class="center">
+                <i class="large material-icons" style="color: blue">chrome_reader_mode</i>
+                <p>A front-end that doesnt give you a headache</p>
+                <p class="light center">made with love :)</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h2>Hopefully this turns out good!</h2>
+{% block content %}
+
+{% endblock content %}
+
 </body>
 </html>
