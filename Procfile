@@ -1,1 +1,1 @@
-web: gunicorn CoolListings.wsgi
+web: gunicorn coollistings.wsgi
