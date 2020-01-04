@@ -4,7 +4,7 @@ from requests.compat import quote_plus
 from bs4 import BeautifulSoup
 from . import models
 
-BASE_CRAIGSLIST_URL = 'https://toronto.craigslist.org/search/?query={}'
+BASE_CRAIGSLIST_URL = 'https://toronto.craigslist.org/search/sss?query={}'
 BASE_IMAGE_URL = 'https://images.craigslist.org/{}_300x300.jpg'
 
 

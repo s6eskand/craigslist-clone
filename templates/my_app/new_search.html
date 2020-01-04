@@ -1,7 +1,11 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <h2 style="text-align: center; font-family: 'Georgia', serif">{{ search | title }}</h2>
+    {% if not final_postings %}
+        <h2 style="text-align: center; font-family: 'Georgia', serif">No results for {{ search | title }} can be found</h2>
+    {% else %}
+        <h2 style="text-align: center; font-family: 'Georgia', serif">{{ search | title }}</h2>
+    {% endif %}
 
     <div class="row" style="font-family: 'Georgia', serif">
         {% for post in final_postings %}
