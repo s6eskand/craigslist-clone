@@ -11,11 +11,3 @@ class Search(models.Model):
 
     class Meta:
         verbose_name_plural = 'Searches'
-
-
-class Price(models.Model):
-    min_price = models.IntegerField(default=None)
-    max_price = models.IntegerField(default=None)
-
-    def __str__(self):
-        return '{}'.format(self.min_price), '{}'.format(self.max_price)
